@@ -15,7 +15,14 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
-    },
+    }, 
+      firebase:{
+        apiKey: "AIzaSyAQT8S7QsFlclfGGaa0-yy4yO5Cj3ydRgM",
+        authDomain: "messageboard-c00b5.firebaseapp.com",
+        databaseURL: "https://messageboard-c00b5.firebaseio.com",
+      storageBucket: "messageboard-c00b5.appspot.com",
+      messagingSenderId: "716848483490"
+      },
 
     APP: {
       // Here you can pass flags/options to your application instance
