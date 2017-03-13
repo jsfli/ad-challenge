@@ -7,7 +7,10 @@
 
 <div class="row">
   {{#each model.challenges as |challenge|}}
-	{{ challenge-display challenge=challenge}}
+	{{ challenge-display challenge=challenge destroyChallenge="destroyChallenge"}}
   {{/each}}
 </div>
+
+{{new-challenge saveChallenge2="saveChallenge3"}}
+
 </div>

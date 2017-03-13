@@ -1,0 +1,45 @@
+{{#if addNewChallenge}}
+  <h1>New Challenge</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        {{input value=companyName id="companyName"}}
+      </div>
+
+      <div class="form-group">
+        <label for="companyDescription">Company Description</label>
+        {{input value=companyDescription id="companyDescription"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        {{input value=productName id="productName"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productDescription">Product Description</label>
+        {{input value=productDescription id="productDescription"}}
+      </div>
+
+      <div class="form-group">
+        <label for="requirement">Requirement</label>
+        {{input value=requirement id="requirement"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Product Image</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="expiryDate">Challenge ends in</label>
+        {{input value=expiryDate id="expiryDate"}}
+      </div>
+
+      <button {{action 'saveChallenge1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'challengeFormShow'}}>New Challenge</button>
+{{/if}}

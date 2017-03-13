@@ -8,6 +8,7 @@ export default DS.Model.extend({
   requirement: DS.attr(),
   image: DS.attr(),
   prize: DS.attr(),
-  expiryDate: DS.attr()
+  expiryDate: DS.attr(),
+  videos: DS.hasMany('video', { async: true })
 
 });
