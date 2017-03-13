@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('challenge');
-  },
-});
+ model() {
+  return Ember.RSVP.hash({
+    challenges: this.store.findAll('challenge'),
+    videos: this.store.findAll('video')
+  });
+}
+})
