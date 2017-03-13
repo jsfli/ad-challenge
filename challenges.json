@@ -26,5 +26,19 @@
   "image": "assets/images/nike.jpeg",
   "prize": 3000,
   "expiryDate": 1
+  }],
+    "video": [{
+    "username": "Andrea",
+    "videodescription": "fun",
+    "videourl": "assets/videos/fly.mp4",
+    "rating": 4,
+    "comment": "used after effects"
+  }, {
+    "username": "Jon",
+    "videodescription": "Sporty",
+    "videourl": "assets/videos/shoe.mp4",
+    "rating": 4,
+    "comment": "used after effects"
   }]
 }
+
