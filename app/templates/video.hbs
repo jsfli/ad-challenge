@@ -1,5 +1,10 @@
-
-{{model.username}}
-<video controls>
+<div class="container">
+  <h2>Video challenge submitted by {{model.username}}</h2>
+  <video width="600" height="400" controls>
   <source src={{model.videourl}}>
 </video>
+
+<h2>Ratings and Comments</h2>
+  <p>{{model.rating}}</p>
+  <p>{{model.comment}}</p>
+</div>

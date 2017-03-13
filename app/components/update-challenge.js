@@ -1,14 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewChallenge: false,
+  updateChallengeForm: false,
   actions: {
-    challengeFormShow() {
-      this.set('addNewChallenge', true);
+    updateChallengeForm() {
+      this.set('updateChallengeForm', true);
     },
-
-    saveChallenge1() {
-      var params = {
+    update(challenge) {
+      
+        var params = {
         companyName: this.get('companyName'),
         companyDescription: this.get('companyDescription'),
         productName: this.get('productName'),
@@ -18,8 +18,8 @@ export default Ember.Component.extend({
         prize: this.get('prize'),
         expiryDate: this.get('expiryDate')
       };
-      this.set('addNewChallenge', false);
-      this.sendAction('saveChallenge2', params);
+      this.set('updateChallengeForm', false);
+      this.sendAction('update', challenge, params);
     }
   }
 });

@@ -5,12 +5,17 @@
 	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div>
 
-<div class="row">
-  {{#each model.challenges as |challenge|}}
-	{{ challenge-display challenge=challenge destroyChallenge="destroyChallenge"}}
-  {{/each}}
-</div>
+	<div class="row">
+		<div class="col-md-4">
+			{{new-challenge saveChallenge2="saveChallenge3"}}
+		</div>
+		<div class="col-md-8">
+			<div class="row">
+			  {{#each model.challenges as |challenge|}}
+				{{ challenge-display update="update" challenge=challenge destroyChallenge="destroyChallenge"}}
+			  {{/each}}
+			</div>
+		</div>
+	</div><!-- End OF row -->
+</div><!-- End of Container -->
 
-{{new-challenge saveChallenge2="saveChallenge3"}}
-
-</div>
