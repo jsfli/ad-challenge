@@ -2,7 +2,8 @@
 
 <div class="challenge-display-tile">
     <div class="col-md-8">
-      <img src= {{challenge.image}}>
+      {{#link-to 'challenge' challenge.id}}<img src= {{challenge.image}}>
+      {{/link-to}}
     </div>
     <div class="col-md-4">
       <div class="panel panel-default">
