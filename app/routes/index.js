@@ -7,7 +7,7 @@ var challenges = [{
   productName: "Vanilla Coke",
   productDescription: "Beverage",
   requirement: "4 minutes ad",
-  image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+  image: "assets/images/coke.jpeg",
   prize: 2000,
   expiryDate: 2
 }, {
@@ -17,7 +17,7 @@ var challenges = [{
   productName: "Mint flavored toothpaste",
   productDescription: "toothpaste",
   requirement: "4 minutes ad",
-  image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+  image: "assets/images/nike.jpeg",
   prize: 1000,
   expiryDate: 2
 }, {
@@ -27,7 +27,7 @@ var challenges = [{
   productName: "Messi boots",
   productDescription: "football boots",
   requirement: "4 minutes ad",
-  image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+  image: "assets/images/tp.jpeg",
   prize: 3000,
   expiryDate: 1
 }];
