@@ -1,0 +1,20 @@
+<div class="row">
+  {{#each model as |challenge|}}
+
+<div class="challenge-display-tile">
+    <div class="col-md-8">
+      <img src= {{challenge.image}}>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          {{challenge.companyName}}</div>
+        <div class="panel-body">
+          {{challenge.productName}} for {{challenge.prize}}
+        </div>
+      </div>
+    </div>
+</div>
+
+  {{/each}}
+</div>
