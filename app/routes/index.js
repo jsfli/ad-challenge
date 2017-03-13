@@ -17,7 +17,7 @@ var challenges = [{
   productName: "Mint flavored toothpaste",
   productDescription: "toothpaste",
   requirement: "4 minutes ad",
-  image: "assets/images/nike.jpeg",
+  image: "assets/images/tp.jpeg",
   prize: 1000,
   expiryDate: 2
 }, {
@@ -27,7 +27,7 @@ var challenges = [{
   productName: "Messi boots",
   productDescription: "football boots",
   requirement: "4 minutes ad",
-  image: "assets/images/tp.jpeg",
+  image: "assets/images/nike.jpeg",
   prize: 3000,
   expiryDate: 1
 }];
