@@ -5,5 +5,9 @@
 	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div>
 
-	{{challenge-display}}
+<div class="row">
+  {{#each model as |challenge|}}
+	{{ challenge-display challenge=challenge}}
+  {{/each}}
+</div>
 </div>
