@@ -10,7 +10,8 @@
         <div class="panel-heading">
           {{challenge.companyName}}</div>
         <div class="panel-body">
-          {{challenge.productName}} for {{challenge.prize}}
+          {{challenge.productName}} for {{challenge.prize}} <br><br>
+          <button class="btn btn-danger" {{action 'delete' challenge}}>Delete Challenge</button>
         </div>
       </div>
     </div>

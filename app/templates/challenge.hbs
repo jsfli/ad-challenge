@@ -1,3 +1,29 @@
-<h2>More information about {{model.companyName}}'s {{modelcompanyProduct}}</h2>
+<div class="container">
+<h2>More information about {{model.companyName}}'s challenge</h2>
 <br>
-<img src={{model.image}}>
+<div class="row">
+	<div class='col-md-2'>
+	</div>
+	<div class="col-md-4">
+		<img src={{model.image}}>
+	</div>
+	<div class="col-md-4">
+		<ul class="list-group">
+  			<li class="list-group-item active">{{model.companyName}}</li>
+  			<li class="list-group-item">Company Type: {{model.companyDescription}}</li>
+  			<li class="list-group-item">Product Name:
+  			{{model.productName}}</li>
+  			<li class="list-group-item">Product Description:
+  			{{model.productDescription}}</li>
+  			<li class="list-group-item">Challenge Requirement:
+  			{{model.requirement}}</li>
+  			<li class="list-group-item">Prize: USD
+  			{{model.prize}}</li>
+  			<li class="list-group-item">Challenge expires in
+  			{{model.expiryDate}} weeks</li>
+		</ul>	
+	</div>
+	<div class='col-md-2'>
+	</div>
+</div>
+</div>
