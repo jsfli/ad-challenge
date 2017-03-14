@@ -4,7 +4,13 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('challenge', params.challenge_id);
   },
+  // var a = Ember.$('#output').value;
   actions: {
+
+  		thumbsup(){
+  			Ember.$("#likes").value = parseInt(Ember.$("#likes").value,10) + 1;
+  		},
+
 	  saveVideo(params) {
 	  		
 	      var newVideo = this.store.createRecord('video', params);
