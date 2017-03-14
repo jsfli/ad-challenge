@@ -1,15 +1,55 @@
-<div class="container">
-	<div class="jumbotron">
-	  <h1>Hello, world!</h1>
-	  <p>...</p>
-	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-	</div>
+<div class="video-tron">
+	<div class="banner-heading">
 
-<div class="row">
-  {{#each model.challenges as |challenge|}}
-	{{ challenge-display challenge=challenge destroyChallenge="destroyChallenge"}}
-  {{/each}}
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3 banner-video">
+					<video autoplay loop>
+						<source src="assets/videos/shoe.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="col-md-3 banner-video">
+					<video autoplay loop>
+						<source src="assets/videos/office.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="col-md-2 banner-video">
+					<video autoplay loop>
+						<source src="assets/videos/guitar.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
+<div class="container">
 
+	<div class="row">
+		<div class="col-md-3">
+			{{new-challenge saveChallenge2="saveChallenge3"}}
+		</div>
+		<div class="col-md-6">
+			<div class="row challenge-display-row">
+				{{#each model.challenges as |challenge|}}
+					{{ challenge-display update="update" challenge=challenge destroyChallenge="destroyChallenge"}}
+				{{/each}}
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h4><span class="testimony">What people are saying?</span></h4>
+			<ul class="list-group">
+				<li class="list-group-item"><strong>"I found my dream project" - <br> Goku </strong></li>
+				<li class="list-group-item"><strong>"Great opportunity to work for big companies" - <br> Luffy</strong> </li>
+				<li class="list-group-item"><strong>
+		  			"New challenges every week" - <br> Vegeta</strong>
+				</li>
+				<li class="list-group-item"><strong>"Great place to find Ad challenges" - <br> Naruto </strong></li>
+				<li class="list-group-item"><strong>"Vestibulum at eros" - <br> Ipsum Lorem </strong></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End OF row -->
 </div>

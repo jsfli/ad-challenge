@@ -1,0 +1,54 @@
+{{#if addNewChallenge}}
+<div class="new-add-form">
+  <h1>New Advertisement</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        {{input value=companyName class="form-control" id="companyName"}}
+      </div>
+
+      <div class="form-group">
+        <label for="companyDescription">Company Description</label>
+        {{input value=companyDescription class="form-control" id="companyDescription"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        {{input value=productName class="form-control" id="productName"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productDescription">Product Description</label>
+        {{input value=productDescription class="form-control" id="productDescription"}}
+      </div>
+
+      <div class="form-group">
+        <label for="requirement">Requirement</label>
+        {{input value=requirement class="form-control" id="requirement"}}
+      </div>
+
+      <div class="form-group">
+        <label for="prize">Prize </label>
+        {{input value=prize class="form-control" id="prize"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Product Image</label>
+        {{input value=image class="form-control" id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="expiryDate">Challenge ends in</label>
+        {{input value=expiryDate class="form-control" id="expiryDate"}}
+      </div>
+
+      <button class="btn btn-info" {{action 'saveChallenge1'}}>Save</button>
+    </form>
+  </div>
+</div>
+{{else}}
+  <button class="btn btn-primary" {{action 'challengeFormShow'}}>New Challenge</button>
+
+
+{{/if}}

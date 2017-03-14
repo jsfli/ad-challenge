@@ -8,6 +8,22 @@ export default Ember.Route.extend({
   });
 },
   actions: {
+
+  	saveChallenge3(params) {
+      var newChallenge = this.store.createRecord('challenge', params);
+      newChallenge.save();
+      this.transitionTo('index');
+    },
+    update(challenge, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+        challenge.set(key,params[key]);
+        }
+    });
+      challenge.save();
+      this.transitionTo('index');
+    },
+
   	 destroyChallenge(challenge) {
       challenge.destroyRecord();
       this.transitionTo('index');

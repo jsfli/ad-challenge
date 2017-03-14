@@ -1,0 +1,45 @@
+{{#if updateChallengeForm}}
+  <div>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="companyNamer">Company Name</label>
+        {{input value=companyName id="companyName" placeholder=challenge.companyName class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="companyDescription">Company Description</label>
+        {{input value=companyDescription id="companyDescription" placeholder=challenge.companyDescription class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        {{input value=productName id="productName" placeholder=challenge.productName class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="productDescription">Product Description</label>
+        {{input value=productDescription id="productDescription" placeholder=challenge.productDescription class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="requirement">Image URL</label>
+        {{input value=requirement id="requirement" placeholder=challenge.requirement class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="prize">Prize</label>
+        {{input value=prize id="prize" placeholder=challenge.prize class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="expiryDate">Challenge expires in</label>
+        {{input value=expiryDate id="expiryDate" placeholder=challenge.expiryDate class="form-control"}}
+      </div>
+
+      <button class="btn btn-info" {{action 'update' challenge}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-warning" {{action 'updateChallengeForm'}}>
+  <i class="fa fa-scissors" aria-hidden="true"></i> Edit Challenge</button>
+{{/if}}
