@@ -5,7 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('challenge', params.challenge_id);
   },
 
-
   actions: {
 	  saveVideo(params) {
 
