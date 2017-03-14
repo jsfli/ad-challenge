@@ -22,9 +22,10 @@
         <label for="comment">Comment</label>
         {{input value=comment id="comment"}}
       </div>
-      <button {{action 'saveVideo'}}>Save</button>
+      <button class="btn btn-primary" {{action 'saveVideo'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'videoFormShow'}}>New Video</button>
+  <button class="btn btn-primary" {{action 'videoFormShow'}}>
+    <i class="fa fa-plus" aria-hidden="true"></i> New Video</button>
 {{/if}}
