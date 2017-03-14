@@ -27,7 +27,7 @@
   "prize": 3000,
   "expiryDate": 1
   }],
-    "video": [{
+    "videos": [{
     "username": "Andrea",
     "videodescription": "fun",
     "videourl": "assets/videos/fly.mp4",
