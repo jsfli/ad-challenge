@@ -26,4 +26,12 @@
 	<div class='col-md-2'>
 	</div>
 </div>
-</div>
+<h2> Video </h2>
+<ul>
+  {{#each model.videos as |video|}}
+    <li>{{video.username}} - {{video.rating}}</li>
+  {{/each}}
+</ul>
+
+{{new-video saveVideo="saveVideo" challenge=model}}
+</div><!-- End of Container -->
