@@ -8,7 +8,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('challenge', {path: '/challenge/:challenge_id'});
-  
+  this.route('video',{path: '/video/:video_id'});
+
 });
 
 export default Router;
