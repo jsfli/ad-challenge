@@ -42,9 +42,13 @@
       <li class="wordwrap list-group-item">Video Url: {{video.videourl}}</li>
       <li class="list-group-item">Rating: {{video.rating}}</li>
       <li class="list-group-item">Comment: {{video.comment}}</li>
+
       <li class="list-group-item">< button {{action 'thumbsup' like}}>
       <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button> 0</li>
       <li class="list-group-item"><button class="btn btn-danger"
+
+       
+
         {{action 'delete' video}}><i class="fa fa-trash-o" aria-hidden="true">
         </i>  Delete Video</button></li>
     </ul>
