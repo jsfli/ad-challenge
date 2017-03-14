@@ -6,9 +6,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-
-
-
 	  saveVideo(params) {
 
 	      var newVideo = this.store.createRecord('video', params);
@@ -19,11 +16,13 @@ export default Ember.Route.extend({
 	      });
 	      this.transitionTo('challenge', challenge);
 	    },
+
 	    delete(video) {
 	    	if (confirm('Are you sure you want to delete this challenge?')){
 	    		video.destroyRecord();
       			this.transitionTo('/challenge/:challenge_id');
 	    	}
     	}
+
 	}
 });
