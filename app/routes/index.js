@@ -14,6 +14,15 @@ export default Ember.Route.extend({
       newChallenge.save();
       this.transitionTo('index');
     },
+    update(challenge, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+        challenge.set(key,params[key]);
+        }
+    });
+      challenge.save();
+      this.transitionTo('index');
+    },
 
   	 destroyChallenge(challenge) {
       challenge.destroyRecord();

@@ -1,21 +1,44 @@
-
-
-<div class="challenge-display-tile">
-    <div class="col-md-8">
-      {{#link-to 'challenge' challenge.id}}<img src= {{challenge.image}}>
-      {{/link-to}}
+<div class="col-md-8">
+  <div class="panel panel-primary">
+    <div class="panel-heading ">
+        <strong>{{challenge.companyName}} </strong>     
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          {{challenge.companyName}}</div>
-        <div class="panel-body">
-          {{challenge.productName}} for {{challenge.prize}} <br><br>
-          <button class="btn btn-danger" {{action 'delete' challenge}}>Delete Challenge</button>
+
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-3">
+          <img src= {{challenge.image}}><br><br>
+          {{#link-to 'challenge' challenge.id}} <button class="btn btn-info">
+          <i class="fa fa-eye" aria-hidden="true"></i> View Challenge</button>
+          {{/link-to}}
+          <br>
+          <br>
+          {{update-challenge challenge=challenge update="update"}}<br>
+          <button class="btn btn-danger" {{action 'delete' challenge}}>
+            <i class="fa fa-trash" aria-hidden="true"></i>  Delete Challenge
+          </button>
         </div>
-      </div>
+
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">Product Name:   {{challenge.productName}} </li>
+            <li class="list-group-item">Product Description:
+              {{challenge.productDescription}}</li>
+            <li class="list-group-item">Challenge Requirement:
+              {{challenge.requirement}}</li>
+            <li class="list-group-item">Prize: USD
+              {{challenge.prize}}</li>
+            <li class="list-group-item">Challenge expires in
+              {{challenge.expiryDate}} weeks</li>
+          </ul>
+        </div>
+      </div>      
     </div>
+  </div>
 </div>
+
 
  
 
