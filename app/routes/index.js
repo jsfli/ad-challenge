@@ -6,5 +6,12 @@ export default Ember.Route.extend({
     challenges: this.store.findAll('challenge'),
     videos: this.store.findAll('video')
   });
-}
+},
+  actions: {
+  	 destroyChallenge(challenge) {
+      challenge.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
+
 })
