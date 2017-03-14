@@ -4,12 +4,10 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('challenge', params.challenge_id);
   },
-  // var a = Ember.$('#output').value;
+  
   actions: {
 
-  		thumbsup(){
-  			
-  		},
+  		
 
 	  saveVideo(params) {
 	  		
