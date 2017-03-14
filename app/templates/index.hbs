@@ -1,39 +1,56 @@
-<div class="container">
-	<div class="jumbotron text-center">
-   <h1>Coming Soon</h1>
-
-   <br/><br/>
-
-   <p>Don't miss our launch date, request an invitation now.</p>
-
-   <div class="form-horizontal form-group form-group-lg row">
-     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
-       {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
-     </div>
-     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
-       <button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'saveInvitation'}}>Request invitation</button>
-     </div>
-   </div>
-
-   {{#if responseMessage}}
-     <div class="alert alert-success">{{responseMessage}}</div>
-   {{/if}}
-
-   <br/><br/>
-
+<div class="video-tron">
+	<div class="banner-heading">
+		
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+	        <div class="row">
+	            <div class="col-md-3 banner-video">
+		            <video autoplay loop>
+						<source src="assets/videos/shoe.mp4" type="video/mp4">
+					</video>
+	            </div>
+	            <div class="col-md-3 banner-video">
+	                <video autoplay loop>
+						<source src="assets/videos/office.mp4" type="video/mp4">
+					</video>
+	            </div>
+	            <div class="col-md-2 banner-video">
+	                <video autoplay loop>
+						<source src="assets/videos/guitar.mp4" type="video/mp4">
+					</video>
+	            </div>
+	        </div>
+	    </div>
+	 </div>
 </div>
 
+<div class="container">
+	
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			{{new-challenge saveChallenge2="saveChallenge3"}}
 		</div>
-		<div class="col-md-8">
-			<div class="row">
+		<div class="col-md-6">
+			<div class="row challenge-display-row">
 			  {{#each model.challenges as |challenge|}}
 				{{ challenge-display update="update" challenge=challenge destroyChallenge="destroyChallenge"}}
 			  {{/each}}
 			</div>
 		</div>
+		<div class="col-md-3">
+			<h4><span class="testimony">What people are saying?</span></h4>
+			<ul class="list-group">
+		  		<li class="list-group-item"><strong>"I found my dream project" - <br> Goku </strong></li>
+		  		<li class="list-group-item"><strong>"Great opportunity to work for big companies" - <br> Luffy</strong> </li>
+		  		<li class="list-group-item"><strong>
+		  			"New challenges every week" - <br> Vegeta</strong>
+		  		</li>
+		  		<li class="list-group-item"><strong>"Great place to find Ad challenges" - <br> Naruto </strong></li>
+		  		<li class="list-group-item"><strong>"Vestibulum at eros" - <br> Ipsum Lorem </strong></li>
+			</ul>
+		</div>
 	</div><!-- End OF row -->
-</div><!-- End of Container -->
+</div>
+
 
