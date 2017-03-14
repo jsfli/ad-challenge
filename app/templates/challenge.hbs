@@ -21,9 +21,41 @@
   			{{model.prize}}</li>
   			<li class="list-group-item">Challenge expires in
   			{{model.expiryDate}} weeks</li>
-		</ul>	
+		</ul>
 	</div>
 	<div class='col-md-2'>
 	</div>
 </div>
+<h1> Video </h1>
+<h3>Submit your videos</h3>
+<div class="add-new-video">
+{{new-video saveVideo="saveVideo" challenge=model}}
 </div>
+<div class="row">
+  {{#each model.videos as |video|}}
+  <div class="col-md-4">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">
+        Username: {{video.username}}</li>
+      <li class="list-group-item">Video Description: {{video.videodescription}}
+      </li>
+      <li class="wordwrap list-group-item">Video Url: {{video.videourl}}</li>
+      <li class="list-group-item">Rating: {{video.rating}}</li>
+      <li class="list-group-item">Comment: {{video.comment}}</li>
+
+      <li class="list-group-item">< button {{action 'thumbsup' like}}>
+      <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button> 0</li>
+      <li class="list-group-item"><button class="btn btn-danger"
+
+       
+
+        {{action 'delete' video}}><i class="fa fa-trash-o" aria-hidden="true">
+        </i>  Delete Video</button></li>
+    </ul>
+  </div>
+  {{/each}}
+</div>
+
+
+
+</div><!-- End of Container -->
