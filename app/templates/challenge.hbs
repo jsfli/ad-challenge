@@ -26,12 +26,15 @@
 	<div class='col-md-2'>
 	</div>
 </div>
-<h2> Video </h2>
+<h1> Video </h1>
+<h3>Submit your videos</h3>
+{{new-video saveVideo="saveVideo" challenge=model}}
 <ul>
   {{#each model.videos as |video|}}
-    <li>{{video.username}} - {{video.rating}}</li>
+    <li>{{video.username}} - {{video.rating}} </li>
+    <button {{action 'delete' video}}>Delete Video</button>
   {{/each}}
 </ul>
 
-{{new-video saveVideo="saveVideo" challenge=model}}
+
 </div><!-- End of Container -->
