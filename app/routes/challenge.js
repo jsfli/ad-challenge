@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
 
   		thumbsup(){
-  			Ember.$("#likes").value = parseInt(Ember.$("#likes").value,10) + 1;
+  			
   		},
 
 	  saveVideo(params) {
