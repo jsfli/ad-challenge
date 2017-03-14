@@ -24,6 +24,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
+    saveVideo(params) {
+      var newVideo = this.store.createRecord('video', params);
+      newVideo.save();
+      this.transitionTo('index');
+    },
+
   	 destroyChallenge(challenge) {
       challenge.destroyRecord();
       this.transitionTo('index');

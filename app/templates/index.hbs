@@ -51,6 +51,14 @@
 			</ul>
 		</div>
 	</div><!-- End OF row -->
+	<ul>
+  {{#each model.videos as |video|}}
+    <li>{{video.rating}} - {{video.username}} - by {{video.videodescription}}
+    </li>
+  {{/each}}
+</ul>
+
+	{{new-video saveVideo="saveVideo"}}
 </div>
 
 
