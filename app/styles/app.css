@@ -10,10 +10,10 @@ body{
 	margin-bottom: 60px;
 }
 .banner-video{
-	
+
 }
 .banner-heading{
-	
+
 }
 
 /*************************/
@@ -24,11 +24,11 @@ ul{
 
 .challenge-display-tile{
 	border-color: grey;
-	background-color: yellow;	
 }
 
 .new-add-form{
-	
+
+
 }
 .testimony{
 	color: #d72444;
@@ -38,5 +38,13 @@ ul{
 
 /********* New Video ******************/
 .add-new-video{
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;      /* IE */
 }

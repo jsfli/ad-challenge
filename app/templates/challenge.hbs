@@ -21,7 +21,7 @@
   			{{model.prize}}</li>
   			<li class="list-group-item">Challenge expires in
   			{{model.expiryDate}} weeks</li>
-		</ul>	
+		</ul>
 	</div>
 	<div class='col-md-2'>
 	</div>
@@ -39,13 +39,16 @@
         Username: {{video.username}}</li>
       <li class="list-group-item">Video Description: {{video.videodescription}}
       </li>
-      <li class="list-group-item">Video Url: {{video.videourl}}</li>
+      <li class="wordwrap list-group-item">Video Url: {{video.videourl}}</li>
       <li class="list-group-item">Rating: {{video.rating}}</li>
       <li class="list-group-item">Comment: {{video.comment}}</li>
-      <li class="list-group-item">< button {{action 'thumbsup'}}>
-      <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
-      {{input type="text" value="0" id="likes"}}</li>
-      <li class="list-group-item"><button class="btn btn-danger" 
+
+      <li class="list-group-item">< button {{action 'thumbsup' like}}>
+      <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button> 0</li>
+      <li class="list-group-item"><button class="btn btn-danger"
+
+       
+
         {{action 'delete' video}}><i class="fa fa-trash-o" aria-hidden="true">
         </i>  Delete Video</button></li>
     </ul>
