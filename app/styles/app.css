@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+	background-color: #fff;
+}
+/**** main video banner ******/
+.video-tron{
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right:10px;
+	margin-bottom: 60px;
+}
+.banner-video{
+
+}
+.banner-heading{
+
+}
+
+/*************************/
 ul{
 	list-style: none;
 }
@@ -5,7 +24,27 @@ ul{
 
 .challenge-display-tile{
 	border-color: grey;
-	background-color: yellow;
-	
+}
 
+.new-add-form{
+
+
+}
+.testimony{
+	color: #d72444;
+	font-family: 'Lobster', cursive;
+	font-size: 26px;
+}
+
+/********* New Video ******************/
+.add-new-video{
+	margin-bottom: 20px;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;      /* IE */
 }

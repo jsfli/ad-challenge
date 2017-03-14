@@ -1,4 +1,5 @@
 {{#if addNewChallenge}}
+<div class="new-add-form">
   <h1>New Advertisement</h1>
   <div>
     <form>
@@ -45,6 +46,9 @@
       <button class="btn btn-info" {{action 'saveChallenge1'}}>Save</button>
     </form>
   </div>
+</div>
 {{else}}
   <button class="btn btn-primary" {{action 'challengeFormShow'}}>New Challenge</button>
+
+
 {{/if}}
