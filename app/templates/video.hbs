@@ -1,10 +1,27 @@
 <div class="container">
   <h2>Video challenge submitted by {{model.username}}</h2>
-  <video width="600" height="400" controls>
+  <div class="row video-display">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <video width="800" height="600" controls>
   <source src={{model.videourl}}>
 </video>
-
-<h1>Ratings and Comments</h1>
-  <p>{{model.rating}}</p>
-  <p>{{model.comment}}</p>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+</div>
+<div class="video-panel">
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8"> <div class="panel panel-primary video-display-panel">
+    <div class="panel-heading">Ratings and Comments</div>
+    <div class="panel-body">
+      Rating: {{model.rating}}<br>
+      Description: {{model.videodescription}}<br>
+      Comment: {{model.comment}}<br>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+</div><!-- End of Row -->
 </div>
