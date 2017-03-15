@@ -3,7 +3,16 @@ body {
   background-color: #fff;
 }
 
-
+/***** navigation bar ***********/
+.navbar-default{
+  background-color: #fff;
+  
+}
+.navbar-header a{
+  font-size: 34px;
+  color: #d72444;
+  font-family: 'Lobster', cursive;
+}
 /**** main video banner ******/
 
 .video-tron {

@@ -37,7 +37,8 @@
   <div class="col-md-4">
     <ul class="list-group">
       <li class="list-group-item list-group-item-success">
-        Username: {{video.username}}</li>
+      {{#link-to 'video' video.id}}
+        Username: {{video.username}} {{/link-to}}</li>
       <li class="list-group-item">Video Description: {{video.videodescription}}
       </li>
       <li class="wordwrap list-group-item">Video Url: {{video.videourl}}</li>
