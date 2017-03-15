@@ -16,6 +16,10 @@ export default Ember.Component.extend({
       };
       this.set('addNewReview',false);
       this.sendAction('saveReview',params);
+    },
+
+    cancelReview() {
+      this.set('addNewReview',false);
     }
   }
 });
