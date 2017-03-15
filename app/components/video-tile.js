@@ -10,8 +10,8 @@ export default Ember.Component.extend({
       n = n + 1;
       video.set('rating', n.toString());
       video.save();
-      this.sendAction('challenge', video);
-      this.transitionTo('/challenge/:challenge_id');
+      // this.sendAction('challenge', video); //no need
+      // this.transitionTo('/challenge/:challenge_id'); //no need
 
     }
   }
