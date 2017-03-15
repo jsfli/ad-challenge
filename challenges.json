@@ -1,44 +1,178 @@
-{ "challenges": [
-  {
-   "companyName": "Coca Cola",
-  "companyDescription": "Softdrink company",
-  "productName": "Vanilla Coke",
-  "productDescription": "Beverage",
-  "requirement": "4 minutes ad",
-  "image": "assets/images/coke.jpeg",
-  "prize": 2000,
-  "expiryDate": 2
-  }, {
-    "companyName": "Colgate",
-  "companyDescription": "Dental Hygiene Company",
-  "productName": "Mint flavored toothpaste",
-  "productDescription": "toothpaste",
-  "requirement": "4 minutes ad",
-  "image": "assets/images/tp.jpeg",
-  "prize": 1000,
-  "expiryDate": 2
-  }, {
-    "companyName": "Nike",
-  "companyDescription": "Shoe company",
-  "productName": "Messi boots",
-  "productDescription": "football boots",
-  "requirement": "4 minutes ad",
-  "image": "assets/images/nike.jpeg",
-  "prize": 3000,
-  "expiryDate": 1
-  }],
-    "videos": [{
-    "username": "Andrea",
-    "videodescription": "fun",
-    "videourl": "assets/videos/fly.mp4",
-    "rating": 4,
-    "comment": "used after effects"
-  }, {
-    "username": "Jon",
-    "videodescription": "Sporty",
-    "videourl": "assets/videos/shoe.mp4",
-    "rating": 4,
-    "comment": "used after effects"
-  }]
-}
+{
+    "challenges": {
+        "0": {
+            "companyDescription": "Softdrink company",
+            "companyName": "Pepsi",
+            "expiryDate": 2,
+            "image": "/assets/images/coke.jpeg",
+            "prize": 2000,
+            "productDescription": "Beverage",
+            "productName": "Cherry Coke",
+            "requirement": "4 minutes ad",
+            "videos": {
+                "-Kf9VkXNceQnx_oClLQi": true,
+                "-Kf9WYoPOSPLPnIL5bz9": true,
+                "-Kf9bNkn3gt1ujweueSo": true,
+                "-Kf9mM-MwuDrWnYQRc78": true,
+                "-Kf9wa-20NhRj48FWbcA": true
+            }
+        },
+        "1": {
+            "companyDescription": "Dental Hygiene Company",
+            "companyName": "Colgate",
+            "expiryDate": 2,
+            "image": "/assets/images/tp.jpeg",
+            "prize": 1000,
+            "productDescription": "toothpaste",
+            "productName": "Mint flavored toothpaste",
+            "requirement": "4 minutes ad",
+            "videos": {
+                "-Kf9l56IU0komaCo9M5I": true,
+                "-Kf9lFPUAsFI97qzD3bL": true
+            }
+        },
+        "2": {
+            "companyDescription": "Shoe company",
+            "companyName": "Nike",
+            "expiryDate": 1,
+            "image": "/assets/images/nike.jpeg",
+            "prize": 3000,
+            "productDescription": "football boots",
+            "productName": "Messi boots",
+            "requirement": "4 minutes ad",
+            "videos": {
+                "-Kf9fuBLX-cBM8U2aePX": true,
+                "-KfAO_u5oxPXz2eoVb0E": true
+            }
+        },
+        "-Kf7lJra7o0ij-XKjqZu": {
+            "companyDescription": "ss",
+            "companyName": "dd",
+            "expiryDate": "3",
+            "image": "ss",
+            "prize": "1",
+            "productDescription": "ss",
+            "productName": "ss",
+            "requirement": "1"
+        }
+    },
+    "reviews": {
+        "0": {
+            "rating": 4,
+            "comment": "used after effects",
+        },
+        "1": {
+            "rating": 1,
+            "comment": "not so good",
+        },
 
+        "videos": {
+            "0": {
+                "comment": "used after effects",
+                "rating": 4,
+                "username": "Andrea",
+                "videodescription": "fun",
+                "videourl": "/assets/videos/fly.mp4"
+            },
+            "1": {
+                "comment": "used after effects",
+                "rating": 4,
+                "username": "Jon",
+                "videodescription": "Sporty",
+                "videourl": "/assets/videos/shoe.mp4"
+            },
+            "-Kf9LdOOxwRj_S1f3MqE": {
+                "comment": "very good",
+                "rating": "4",
+                "username": "John",
+                "videodescription": "for colgate company",
+                "videourl": "www.example.com"
+            },
+            "-Kf9RYteDerKFrpVR5TR": {
+                "comment": "testing",
+                "rating": "10",
+                "username": "testing testing 123",
+                "videodescription": "teseting testing 123",
+                "videourl": "teseting testing 123"
+            },
+            "-Kf9U3EiCrG6xYQVQ_xx": {
+                "comment": "dfgfdjgkkfdg",
+                "rating": "10",
+                "username": "213 ",
+                "videodescription": "ewr3werewr",
+                "videourl": "ewrewrew"
+            },
+            "-Kf9VkXNceQnx_oClLQi": {
+                "challenge": "0",
+                "comment": "aa",
+                "rating": "10",
+                "username": "aa",
+                "videodescription": "aa",
+                "videourl": "aa"
+            },
+            "-Kf9WYoPOSPLPnIL5bz9": {
+                "challenge": "0",
+                "comment": "ss",
+                "rating": "10",
+                "username": "ss",
+                "videodescription": "ss",
+                "videourl": "ss"
+            },
+            "-Kf9bNkn3gt1ujweueSo": {
+                "challenge": "0",
+                "comment": "very good",
+                "rating": "100",
+                "username": "David Fung",
+                "videodescription": "My first video",
+                "videourl": "https://www.youtube.com/watch?v=5LaO8HR8x_Q"
+            },
+            "-Kf9fuBLX-cBM8U2aePX": {
+                "challenge": "2",
+                "comment": "Sleek",
+                "rating": "10",
+                "username": "Richard NG",
+                "videodescription": "Sporty ads",
+                "videourl": "www.example.com"
+            },
+            "-Kf9l56IU0komaCo9M5I": {
+                "challenge": "1",
+                "comment": "fiery paste",
+                "rating": "10",
+                "username": "Brian Law",
+                "videodescription": "Fire Toothpaste",
+                "videourl": "https://www.dropbox.com/s/7igg3z8li9kkqu8/flame.mp4?dl=0"
+            },
+            "-Kf9lFPUAsFI97qzD3bL": {
+                "challenge": "1",
+                "comment": "super cool",
+                "rating": "100",
+                "username": "David Fung",
+                "videodescription": "super video",
+                "videourl": "https://www.dropbox.com/s/wmup626zoq70k88/Get%20Started%20with%20Dropbox.pdf?dl=0"
+            },
+            "-Kf9mM-MwuDrWnYQRc78": {
+                "challenge": "0",
+                "comment": "added 170314@1108",
+                "rating": "50",
+                "username": "David Fung",
+                "videodescription": "another try",
+                "videourl": "https://www.dropbox.com/s/wmup626zoq70k88/Get%20Started%20with%20Dropbox.pdf?dl=0"
+            },
+            "-Kf9wa-20NhRj48FWbcA": {
+                "challenge": "0",
+                "comment": "ss",
+                "rating": "10",
+                "username": "ss",
+                "videodescription": "ss",
+                "videourl": "\"https://www.dropbox.com/s/wmup626zoq70k88/Get%20Started%20with%20Dropbox.pdf?dl=0\""
+            },
+            "-KfAO_u5oxPXz2eoVb0E": {
+                "challenge": "2",
+                "comment": "ss",
+                "rating": "10",
+                "username": "ss",
+                "videodescription": "ss",
+                "videourl": "/assets/videos/fly.mp4"
+            }
+        }
+    }
