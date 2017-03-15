@@ -6,12 +6,17 @@ body {
 /***** navigation bar ***********/
 .navbar-default{
   background-color: #fff;
+  color: #d72444;
   
 }
 .navbar-header a{
   font-size: 34px;
-  color: #d72444;
+  
   font-family: 'Lobster', cursive;
+}
+
+.nav-form{
+  margin-top:10px;
 }
 /**** main video banner ******/
 

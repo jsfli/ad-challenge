@@ -36,13 +36,15 @@
 			<div class="col-md-7">
 				<ul class="list-group">
 					<li class="list-group-item list-group-item-success">
-						{{#link-to 'video' video.id}}
-							Username: {{video.username}} {{/link-to}}
+						
+							Username: {{video.username}} 
 					</li>
 					<li class="list-group-item">Video Description: {{video.videodescription}}
 					</li>
 					<li class="wordwrap list-group-item"> 
-						<iframe width="622" height="315" src= {{video.videourl}} frameborder="0" allowfullscreen></iframe></li>
+          {{#link-to 'video' video.id}}
+						<iframe width="622" height="315" src= {{video.videourl}} frameborder="0" allowfullscreen></iframe>{{/link-to}}
+            </li>
 
 
 					<!-- David works on Thumb-up  -->
