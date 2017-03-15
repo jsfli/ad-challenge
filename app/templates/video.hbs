@@ -2,15 +2,13 @@
   <div class="row">
     <div class="col-xs-8">
 
-      {{video-display model=model}}
-
-      {{review-display model=model}}
+      {{video-display model=model}} {{review-display model=model}}
 
 
-  </div>
-  <div class="col-xs-4">
-    <p class="saveReviewButton">{{new-review saveReview="saveReview" video=model}}</p>
-  </div>
+    </div>
+    <div class="col-xs-4">
+      <p class="saveReviewButton">{{new-review saveReview="saveReview" video=model}}</p>
+    </div>
   </div>
   <!-- End of Row -->
 </div>

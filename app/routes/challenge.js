@@ -16,7 +16,7 @@ export default Ember.Route.extend({
 	      });
 	      this.transitionTo('challenge', challenge);
 	    },
-	    
+
 
 	    delete(video) {
 	    	if (confirm('Are you sure you want to delete this challenge?')){
@@ -26,13 +26,7 @@ export default Ember.Route.extend({
     	},
 
       // david added the below code
-      thumbupClicked(video){
-        var n = parseInt(video.get('rating'));
-        n = n + 1;
-        video.set('rating', n.toString());
-        video.save();
-        this.transitionTo('/challenge/:challenge_id');
-      }
+    
       // david added the above code
 	}
 });

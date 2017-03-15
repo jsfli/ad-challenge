@@ -25,47 +25,15 @@
 		<div class='col-md-2'>
 		</div>
 	</div>
+
+
 	<h1> Video </h1>
 	<h3>Submit your videos</h3>
 	<div class="add-new-video">
-		{{new-video saveVideo="saveVideo" challenge=model}}
-
-	</div>
-	<div class="row">
-		{{#each model.videos as |video|}}
-			<div class="col-md-7">
-				<ul class="list-group">
-					<li class="list-group-item list-group-item-success">
-						
-							Username: {{video.username}} 
-					</li>
-					<li class="list-group-item">Video Description: {{video.videodescription}}
-					</li>
-					<li class="wordwrap list-group-item"> 
-          {{#link-to 'video' video.id}}
-						<iframe width="622" height="315" src= {{video.videourl}} frameborder="0" allowfullscreen></iframe>{{/link-to}}
-            </li>
-
-
-					<!-- David works on Thumb-up  -->
-					<li class="list-group-item">
-						<button class="btn btn-primary" {{action 'thumbupClicked' video}}>
-            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>   {{video.rating}}
-         </button></li>
-
-					<!-- David's work above -->
-
-					<li class="list-group-item">
-						<button class="btn btn-danger" {{action 'delete' video}}>
-      <i class="fa fa-trash-o" aria-hidden="true">
-        </i>  Delete Video</button></li>
-
-				</ul>
-			</div>
-		{{/each}}
+		{{new-video saveVideo="saveVideo" challenge=model }}
 	</div>
 
+	{{video-tile model=model}}
 
 
-</div>
-<!-- End of Container -->
+</div><!-- End of Container -->
