@@ -30,6 +30,8 @@ export default Ember.Route.extend({
         var n = parseInt(video.get('rating'));
         n = n + 1;
         video.set('rating', n.toString());
+        video.save();
+        this.transitionTo('/challenge/:challenge_id');
       }
       // david added the above code
 	}
