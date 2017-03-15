@@ -7,4 +7,5 @@ export default DS.Model.extend({
   rating: DS.attr(),
   comment: DS.attr(),
   challenge: DS.belongsTo('challenge', { async: true }),
+  reviews: DS.hasMany('review', { async: true }),
 });
