@@ -16,6 +16,15 @@ export default Ember.Route.extend({
 	      });
 	      this.transitionTo('challenge', challenge);
 	    },
+	    update(video, params) {
+      		Object.keys(params).forEach(function(key) {
+        	if(params[key]!==undefined) {
+        	video.set(key,params[key]);
+        	}
+    	});
+      		video.save();
+      		this.transitionTo('/challenge/:challenge_id');
+    	},
 
 	    delete(video) {
 	    	if (confirm('Are you sure you want to delete this challenge?')){
