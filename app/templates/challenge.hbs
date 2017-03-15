@@ -1,66 +1,69 @@
 <div class="container">
-<h2>More information about {{model.companyName}}'s challenge</h2>
-<br>
-<div class="row">
-	<div class='col-md-2'>
+	<h2>More information about {{model.companyName}}'s challenge</h2>
+	<br>
+	<div class="row">
+		<div class='col-md-2'>
+		</div>
+		<div class="col-md-4">
+			<img src= {{model.image}}>
+		</div>
+		<div class="col-md-4">
+			<ul class="list-group">
+				<li class="list-group-item active">{{model.companyName}}</li>
+				<li class="list-group-item">Company Type: {{model.companyDescription}}</li>
+				<li class="list-group-item">Product Name: {{model.productName}}
+				</li>
+				<li class="list-group-item">Product Description: {{model.productDescription}}
+				</li>
+				<li class="list-group-item">Challenge Requirement: {{model.requirement}}
+				</li>
+				<li class="list-group-item">Prize: USD {{model.prize}}
+				</li>
+				<li class="list-group-item">Challenge expires in {{model.expiryDate}} weeks</li>
+			</ul>
+		</div>
+		<div class='col-md-2'>
+		</div>
 	</div>
-	<div class="col-md-4">
-		<img src={{model.image}}>
-	</div>
-	<div class="col-md-4">
-		<ul class="list-group">
-  			<li class="list-group-item active">{{model.companyName}}</li>
-  			<li class="list-group-item">Company Type: {{model.companyDescription}}</li>
-  			<li class="list-group-item">Product Name:
-  			{{model.productName}}</li>
-  			<li class="list-group-item">Product Description:
-  			{{model.productDescription}}</li>
-  			<li class="list-group-item">Challenge Requirement:
-  			{{model.requirement}}</li>
-  			<li class="list-group-item">Prize: USD
-  			{{model.prize}}</li>
-  			<li class="list-group-item">Challenge expires in
-  			{{model.expiryDate}} weeks</li>
-		</ul>
-	</div>
-	<div class='col-md-2'>
-	</div>
-</div>
-<h1> Video </h1>
-<h3>Submit your videos</h3>
-<div class="add-new-video">
-{{new-video saveVideo="saveVideo" challenge=model}}
+	<h1> Video </h1>
+	<h3>Submit your videos</h3>
+	<div class="add-new-video">
+		{{new-video saveVideo="saveVideo" challenge=model}}
 
-</div>
-<div class="row">
-  {{#each model.videos as |video|}}
-  <div class="col-md-4">
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-success">
-      {{#link-to 'video' video.id}}
-        Username: {{video.username}} {{/link-to}}</li>
-      <li class="list-group-item">Video Description: {{video.videodescription}}
-      </li>
-      <li class="wordwrap list-group-item">Video Url: {{video.videourl}}</li>
+	</div>
+	<div class="row">
+		{{#each model.videos as |video|}}
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-success">
+						{{#link-to 'video' video.id}}
+							Username: {{video.username}} {{/link-to}}
+					</li>
+					<li class="list-group-item">Video Description: {{video.videodescription}}
+					</li>
+					<li class="wordwrap list-group-item">Video Url: {{video.videourl}}
+						<iframe width="560" height="315" src= {{video.videourl}} frameborder="0" allowfullscreen></iframe></li>
 
-			<!-- David works on Thumb-up  -->
-      <li class="list-group-item">
-			<button class="btn btn-primary" {{action 'thumbupClicked' video}}>
-      <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>   {{video.rating}}
+
+					<!-- David works on Thumb-up  -->
+					<li class="list-group-item">
+						<button class="btn btn-primary" {{action 'thumbupClicked' video}}>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>   {{video.rating}}
          </button></li>
- 		 
-			<!-- David's work above -->
 
-      <li class="list-group-item">
-      <button class="btn btn-danger" {{action 'delete' video}}>
+					<!-- David's work above -->
+
+					<li class="list-group-item">
+						<button class="btn btn-danger" {{action 'delete' video}}>
       <i class="fa fa-trash-o" aria-hidden="true">
         </i>  Delete Video</button></li>
 
-    </ul>
-  </div>
-  {{/each}}
+				</ul>
+			</div>
+		{{/each}}
+	</div>
+
+
+
 </div>
-
-
-
-</div><!-- End of Container -->
+<!-- End of Container -->
