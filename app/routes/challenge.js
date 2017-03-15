@@ -22,7 +22,14 @@ export default Ember.Route.extend({
 	    		video.destroyRecord();
       			this.transitionTo('/challenge/:challenge_id');
 	    	}
-    	}
+    	},
 
+      // david added the below code
+      thumbupClicked(video){
+        var n = parseInt(video.get('rating'));
+        n = n + 1;
+        video.set('rating', n.toString());
+      }
+      // david added the above code
 	}
 });
