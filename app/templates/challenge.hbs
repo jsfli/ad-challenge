@@ -30,6 +30,7 @@
 <h3>Submit your videos</h3>
 <div class="add-new-video">
 {{new-video saveVideo="saveVideo" challenge=model}}
+{{update-video video=video update="update"}}
 </div>
 <div class="row">
   {{#each model.videos as |video|}}
@@ -45,11 +46,10 @@
       <li class="list-group-item"><button class="btn btn-danger"
         {{action 'delete' video}}><i class="fa fa-trash-o" aria-hidden="true">
         </i>  Delete Video
-        </button> <button class="btn btn-warning">
+        </button> <button class="btn btn-warning" {{action 'update' video}}>
         <i class="fa fa-scissors" aria-hidden="true"></i>  Update Video</button>
       </li>
         
-
     </ul>
   </div>
   {{/each}}

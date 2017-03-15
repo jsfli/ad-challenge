@@ -1,1 +1,35 @@
-{{yield}}
+{{#if updateVideoForm}}
+  <h4>Update {{video.username}}'s submission</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        {{input value=username id="username" placeholder=rental.owner}}
+      </div>
+
+      <div class="form-group">
+        <label for="videodescription">Video Description</label>
+        {{input value=videodescription id="videodescription" placeholder=video.description}}
+      </div>
+
+      <div class="form-group">
+        <label for="videourl">Video Url</label>
+        {{input value=videourl id="videourl" placeholder=rental.city}}
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        {{input value=rating id="rating" placeholder=video.rating}}
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        {{input value=comment id="comment" placeholder=video.comment}}
+      </div>
+
+      <button {{action 'update' video}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateVideoForm'}}>Update</button>
+{{/if}}
