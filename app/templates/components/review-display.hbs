@@ -1,0 +1,14 @@
+<h3>Ratings and Comments</h3>
+
+<h4> Total rating: {{sumOfScores}}</h4>
+<h4> Average rating: {{averageScore}}</h4>
+<div class="ratingsComments">
+{{#each model.reviews as |review|}}
+  <div class="panel panel-primary">
+    <div class="panel-heading">Ratings from {{model.username}}</div>
+    <div class="panel-body">
+      Rating: {{review.rating}}<br> Comment: {{review.comment}}<br>
+    </div>
+  </div>
+{{/each}}
+</div>
