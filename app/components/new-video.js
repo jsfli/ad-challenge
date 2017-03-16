@@ -7,12 +7,12 @@ export default Ember.Component.extend({
       this.set('addNewVideo', true);
     },
     saveVideo() {
-      
+
      var params = {
        username: this.get('username'),
        videodescription: this.get('videodescription'),
        videourl: this.get('videourl'),
-       rating: this.get('rating'),
+       rating: parseInt(this.get('rating')),
        comment: this.get('comment'),
        challenge: this.get('challenge'),
      };
