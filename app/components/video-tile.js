@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+  sortBy: ['rating:desc'],
+  sortedVideos: Ember.computed.sort('model.videos','sortBy'),
+
   model(params) {
     return this.store.findRecord('video', params.video_id);
   },
