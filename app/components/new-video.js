@@ -12,7 +12,7 @@ export default Ember.Component.extend({
        username: this.get('username'),
        videodescription: this.get('videodescription'),
        videourl: this.get('videourl'),
-       rating: parseInt(this.get('rating')),
+       rating: 0,
        comment: this.get('comment'),
        challenge: this.get('challenge'),
      };
