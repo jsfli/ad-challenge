@@ -7,6 +7,8 @@ export default Ember.Route.extend({
     videos: this.store.findAll('video')
   });
 },
+
+
   actions: {
 
   	saveChallenge3(params) {
