@@ -21,7 +21,7 @@ emai: email
 });
 user.save()
 .then(() =>{
-this.transitionTo('admin');
+this.transitionTo('index');
 });
 });
 }
