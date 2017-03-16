@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
   model(params) {
     return this.store.findRecord('video', params.video_id);
   },
@@ -12,7 +13,6 @@ export default Ember.Component.extend({
       video.save();
       this.sendAction('challenge', video);
       this.transitionTo('/challenge/:challenge_id');
-
     }
   }
 });
