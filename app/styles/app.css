@@ -3,21 +3,24 @@ body {
   background-color: #fff;
 }
 
+
 /***** navigation bar ***********/
-.navbar-default{
+
+.navbar-default {
   background-color: #fff;
   color: #d72444;
-  
 }
-.navbar-header a{
+
+.navbar-header a {
   font-size: 34px;
-  
   font-family: 'Lobster', cursive;
 }
 
-.nav-form{
-  margin-top:10px;
+.nav-form {
+  margin-top: 10px;
 }
+
+
 /**** main video banner ******/
 
 .video-tron {
@@ -73,14 +76,11 @@ ul {
 
 /******** Video display **********/
 
-
-
-
-.float-left{
+.float-left {
   float: left;
 }
 
-.float-right{
+.float-right {
   float: right;
 }
 
@@ -92,5 +92,19 @@ ul {
   font-size: 20px;
   width: 100%;
   height: 400px;
-  overflow:scroll;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+  .video-frame {
+    width: 100%;
+    height: 315px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .video-frame {
+    width: 100%;
+    height: 500px;
+  }
 }
