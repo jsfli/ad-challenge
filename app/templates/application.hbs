@@ -20,22 +20,7 @@
        </div>
 
       <div class="nav-form">
-	      <form >
-	        <div class="form-horizontal form-group form-group row">
-	     		<div class="col-md-6 col-md-offset-2 col-md-5 col-md-offset-2">
-	       			{{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
-	     		</div>
-	     		<div class="col-sm-offset-0 col-sm-4 col-md-3">
-	       			<button class="btn btn-primary  btn-block" {{action 'saveInvitation'}} disabled={{isDisabled}}>Subscribe</button>
-	     		</div>
-	   		</div>
-				{{#if responseMessage}}
-     				<div class="alert alert-success alert-dismissible">
-     					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-     						{{responseMessage}}
-     				</div>
-   				{{/if}}
-	       </form>
+	      
 	    </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
