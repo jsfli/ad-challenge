@@ -15,15 +15,10 @@ export default Ember.Route.extend({
 	        return challenge.save();
 	      });
 	      this.transitionTo('challenge', challenge);
-	    },
+	    }
 
 
-	    delete(video) {
-	    	if (confirm('Are you sure you want to delete this challenge?')){
-	    		video.destroyRecord();
-      			this.transitionTo('/challenge/:challenge_id');
-	    	}
-    	},
+	    
 
       // david added the below code
     

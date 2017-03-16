@@ -10,9 +10,12 @@ export default Ember.Component.extend({
       n = n + 1;
       video.set('rating', n.toString());
       video.save();
-      // this.sendAction('challenge', video); //no need
-      // this.transitionTo('/challenge/:challenge_id'); //no need
-
-    }
+    },
+    delete(video) {
+        if (confirm('Are you sure you want to delete this challenge?')){
+          video.destroyRecord();
+            this.transitionTo('/challenge/:challenge_id');
+        }
+      }
   }
 });
