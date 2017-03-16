@@ -10,9 +10,21 @@ export default Ember.Component.extend({
   },
   actions: {
     thumbupClicked(video){
+      var rating = video.get ('rating');
+      console.log (typeof (rating) );
+
+      if (typeof (rating) === 'string') {
       var n = parseInt(video.get('rating'));
       n = n + 1;
-      video.set('rating', n.toString());
+      video.set('rating', n); //force rating to number now
+    }
+
+      else {
+      var n = video.get('rating');
+      n = n+1;
+      video.set('rating', n);
+      }
+
       video.save();
 
     },
