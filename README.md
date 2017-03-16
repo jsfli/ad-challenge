@@ -17,7 +17,7 @@ This Ad-challenge site is a platform for Advertisers to list their products to s
 The development went through the following steps:
 * UI design
 * Data model design
-* Software architecture (ember component) design
+* Software architecture (ember framework) design
 
 We practiced changing partners daily and assigned component changes to the strengths and preferences of our members.
 
