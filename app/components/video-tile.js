@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
   model(params) {
     return this.store.findRecord('video', params.video_id);
   },
@@ -10,6 +11,7 @@ export default Ember.Component.extend({
       n = n + 1;
       video.set('rating', n.toString());
       video.save();
+
     },
     delete(video) {
         if (confirm('Are you sure you want to delete this challenge?')){
@@ -17,5 +19,6 @@ export default Ember.Component.extend({
             this.transitionTo('/challenge/:challenge_id');
         }
       }
+
   }
 });
