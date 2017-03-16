@@ -1,7 +1,29 @@
 # ad-challenge
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Members:
+This project is built by the team comprising of the following members (in alphabetical order):
+
+* David Fung
+* Isaac Wong
+* Jeffrey Li
+* Nadim Rai
+
+## Brainstorming:
+After brainstorming together, we come to the conclusion that, among other business ideas, the best idea is to build a site to host the platform for Advertisement Challenge.
+
+This Ad-challenge site is a platform for Advertisers to list their products to solicit video clips to compete for a prize. The best video which advertises the product will win.
+
+## Development:
+The development went through the following steps:
+* UI design
+* Data model design
+* Software architecture (ember framework) design
+
+We practiced changing partners daily and assigned component changes to the strengths and preferences of our members.
+
+We make use of github to collaborate together and have assigned Nadim Rai to facilitate the code merge:
+* All members are equal contributors to the project;
+* github statistics do not reflect the contribution level of individual member.
 
 ## Prerequisites
 
@@ -24,29 +46,3 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
