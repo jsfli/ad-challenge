@@ -11,10 +11,12 @@
       </ul>
        <!-- this is the logout button -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
 
       {{#if session.isAuthenticated}}
-               <button {{action 'logout'}}>Logout</button>
+               <button class="sign-out-btn" {{action 'logout'}}>
+                <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                </button>
              {{/if}}
              </ul>
        </div>
